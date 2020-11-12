@@ -84,7 +84,7 @@ jobs:
       - name: Build pulsar adapters
         run: |
           cd adapters
-          mvn clean license:check install
+          mvn clean license:check checkstyle:check install
 
       - name: package surefire artifacts
         if: failure()

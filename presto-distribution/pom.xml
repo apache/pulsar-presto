@@ -339,7 +339,7 @@
                 <artifactId>license-maven-plugin</artifactId>
                 <version>3.0</version>
                 <configuration>
-                    <header>../../src/license-header.txt</header>
+                    <header>../src/license-header.txt</header>
                 </configuration>
             </plugin>
             <plugin>
@@ -347,6 +347,13 @@
               <configuration>
                 <source>1.8</source>
                 <target>1.8</target>
+              </configuration>
+            </plugin>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-checkstyle-plugin</artifactId>
+              <configuration>
+                  <skip>true</skip>
               </configuration>
             </plugin>
         </plugins>
